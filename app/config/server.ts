@@ -81,7 +81,7 @@ export const getServerSideConfig = () => {
     openaiOrgId: process.env.OPENAI_ORG_ID,
 
     isAzure,
-    azureUrl: process.env.AZURE_URL,
+    azureUrl: `${process.env.AZURE_URL}/${process.env.AZURE_OPENAI_DEPLOYMENT_NAME}`,
     azureApiKey: process.env.AZURE_API_KEY,
     azureApiVersion: process.env.AZURE_API_VERSION,
 
